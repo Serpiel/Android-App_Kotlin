@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/registerScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/registerRootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+
+        <TextView
+            android:id="@+id/textRegisterTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_title"
+            android:textColor="@color/text"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textRegisterSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_subtitle"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/subtitle_size"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/small_margin" />
+
+        <LinearLayout
+            android:id="@+id/registerFormCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/register_card_background"
+            android:layout_marginTop="@dimen/large_margin">
+
+            <TextView
+                android:id="@+id/textFullNameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_full_name"
+                android:textColor="@color/text"
+                android:textSize="@dimen/label_size"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Ex: Hugo"
+                android:hint="@string/hint_full_name"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/input_text_size"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/textEmailLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_email"
+                android:textColor="@color/text"
+                android:textSize="@dimen/label_size"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/standard_margin" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="ex: nom@gmail.com"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress"
+                android:textSize="@dimen/input_text_size"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/textPasswordLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_password"
+                android:textColor="@color/text"
+                android:textSize="@dimen/label_size"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/standard_margin" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Ex : 0A8937trgc"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:textSize="@dimen/input_text_size"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/textConfirmPasswordLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_confirm_password"
+                android:textColor="@color/text"
+                android:textSize="@dimen/label_size"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/standard_margin" />
+
+            <EditText
+                android:id="@+id/editTextConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Ex : 0A8937trgc"
+                android:hint="@string/hint_confirm_password"
+                android:inputType="textPassword"
+                android:textSize="@dimen/input_text_size"
+                android:layout_marginTop="4dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_terms"
+                android:textColor="@color/text"
+                android:layout_marginTop="@dimen/standard_margin" />
+
+            <Button
+                android:id="@+id/buttonRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/button_min_height"
+                android:text="@string/button_register"
+                android:layout_marginTop="@dimen/large_margin" />
+
+            <Button
+                android:id="@+id/buttonClear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/button_min_height"
+                android:text="@string/button_clear"
+                android:layout_marginTop="@dimen/small_margin" />
+
+            <TextView
+                android:id="@+id/textFormResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/form_ready"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/result_text_size"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/standard_margin" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
